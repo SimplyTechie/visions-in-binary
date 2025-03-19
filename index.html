@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binayak's Digital Odyssey</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("1Jai0d1F_4TM_X9Bu");
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand" onclick="scrollToSection('hero')">
+          <span class="gradient-text">Binayak B.</span>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+          <button onclick="scrollToSection('about')" class="nav-link">
+            About
+          </button>
+          <button onclick="scrollToSection('projects')" class="nav-link">
+            Projects
+          </button>
+          <button onclick="scrollToSection('skills')" class="nav-link">
+            Skills
+          </button>
+          <button onclick="scrollToSection('contact')" class="nav-link">
+            Contact
+          </button>
+        </div>
+
+        <div class="nav-social">
+          <a
+            href="https://github.com/binayakbartaula11"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <i data-lucide="github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/binayakbartaula"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:binayakcreations20@gmail.com" class="social-link">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <i data-lucide="menu" id="menu-icon"></i>
+          <i data-lucide="x" id="close-icon" class="hidden"></i>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <button onclick="scrollToSection('about')" class="mobile-link">
+          About
+        </button>
+        <button onclick="scrollToSection('projects')" class="mobile-link">
+          Projects
+        </button>
+        <button onclick="scrollToSection('skills')" class="mobile-link">
+          Skills
+        </button>
+        <button onclick="scrollToSection('contact')" class="mobile-link">
+          Contact
+        </button>
+        <div class="mobile-social">
+          <a
+            href="https://github.com/binayakbartaula11"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i data-lucide="github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/binayakbartaula"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:binayakcreations20@gmail.com">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <div class="animated-bg"></div>
+        <!-- Add animated background container -->
+      </div>
+      <div class="hero-content">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="fade-in">
+          Salutations, <span class="gradient-text">I'm Binayak</span>
+        </h1>
+        <h2 class="fade-in delay-500">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <button
+          onclick="scrollToSection('projects')"
+          class="cta-button fade-in delay-1000"
+        >
+          Browse My Work
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="gradient-text">Who I Am and What I Do</span>
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I’m an aspiring developer currently pursuing a Bachelor’s degree
+              in Computer Science, driven by a passion for creating innovative
+              and impactful digital solutions. With expertise spanning web
+              development, programming, and problem-solving, I’ve honed my
+              skills through a variety of hands-on projects. These experiences
+              have not only sharpened my technical abilities but also cultivated
+              my capacity to thrive in dynamic, fast-paced environments.
+            </p>
+            <p>
+              I am committed to continuously expanding my skill set by exploring
+              emerging technologies and tackling complex projects. My focus
+              remains on refining my problem-solving and logic-building
+              abilities to stay ahead in the ever-evolving tech landscape.
+            </p>
+            <p>
+              Beyond academics, I draw inspiration from literature, cinematic
+              works, TV shows, and interactive media, all of which fuel my
+              creativity and drive for innovation. These passions not only
+              broaden my critical thinking but also enable me to approach
+              challenges with fresh perspectives. Additionally, I enjoy playing
+              video games, a hobby that helps me unwind and stay refreshed.
+            </p>
+            <p>
+              In terms of development, I am proficient in JavaScript, Python,
+              and frameworks like React and Node.js, utilizing these tools to
+              bring my creative ideas to life through code. Passionate about
+              innovation, I’m eager to contribute to the tech and engineering
+              fields through impactful projects. I aim to collaborate with
+              forward-thinking teams and apply my skills to create solutions
+              that make a meaningful difference. As a lifelong learner, I
+              embrace every opportunity to grow and thrive in this dynamic
+              industry.
+            </p>
+          </div>
+
+          <div class="interests-grid" id="interests-grid">
+            <!-- Interests will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="gradient-text">My Work in Action</span>
+        </h2>
+
+        <div class="project-filters" id="project-filters">
+          <!-- Filters will be populated by JavaScript -->
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="gradient-text">Skills and Expertise</span>
+        </h2>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="gradient-text">Let's Build Something Extraordinary</span>
+            </h2>
+            <p class="section-subtitle">
+              Got a vision? Let's create something amazing together!
+            </p>
+          </div>
+    
+          <div class="contact-grid">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name<span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="input-field"
+                  placeholder="Krishna Koirala"
+                  autocomplete="name"
+                />
+              </div>
+    
+              <div class="form-group">
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="input-field"
+                  placeholder="tapai@gmail.com"
+                  autocomplete="email"
+                />
+              </div>
+    
+              <div class="form-group">
+                <label for="message">Your Message<span class="required">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="input-field"
+                  placeholder="Hami tapai ko pariyojanabare janana chahanchau..."
+                ></textarea>
+              </div>
+    
+              <button type="submit" class="submit-button">
+                <span>Send Message</span>
+                <i data-lucide="send" class="button-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </body>
+    
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>Empowering change through invisible threads of code. © 2024 Binayak Bartaula. All rights reserved.</p>
+      <a href="https://binayakio.netlify.app" class="new-site-link" aria-label="Visit my new site">
+        <span class="sr-only">Visit my new site</span>
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"></path>
+          <path d="M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  </body>
+</html>
